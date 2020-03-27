@@ -1,65 +1,81 @@
 
 function typeOfFear(red, green, yellow) {
-  if (fear === red) {
-    console.log('Very CSS');
-  } else if (fear === green) {
-    console.log('Very Ruby');
-  } else (fear === yellow) 
-    console.log('Very C#');
-  }
-};
+  if (typeOfFear === red) {
+    $('#ruby').show();
+  } else if (typeOfFear === green) {
+    $('#csharp').show();
+  } else (typeOfFear === yellow) 
+    $('#java').show();
+  };
 
 function htmlStandFor(laughs, lovers, meatloaf) {
-  if (standfor === laughs) {
-    console.log('Very CSS');
-  } else if (standfor === lovers) {
-    console.log('Very Ruby');
-  } else (standfor === meatloaf) 
-    console.log('Very C#');
-  }
-};
+  if (htmlStandFor === laughs) {
+    $('#ruby').show();
+  } else if (htmlStandFor === lovers) {
+    $('#csharp').show();
+  } else (htmlStandFor === meatloaf) 
+    $('#java').show();
+  };
 
-function cry(pizza, insect, sartre) {
-  if (cry === pizza) {
-    console.log('Very CSS');
-  } else if (cry === insect) {
-    console.log('Very Ruby');
-  } else (cry === sartre) 
-    console.log('Very C#');
-  }
-};
+function cryTime(pizza, insect, sartre) {
+  if (cryTime === pizza) {
+    $('#csharp').show();
+  } else if (cryTime === insect) {
+    $('#ruby').show();
+  } else (cryTime === sartre) 
+    $('#java').show();
+  };
 
-function outside(none, some, all) {
-  if (outside === none) {
-    console.log('Very CSS');
-  } else if (outside === some) {
-    console.log('Very Ruby');
-  } else (outside === all) 
-    console.log('Very C#');
-  }
-};
+function goOutside(none, some, all) {
+  if (goOutside === none) {
+    $('#java').show();
+  } else if (goOutside === some) {
+    $('#ruby').show();
+  } else (goOutside === all) 
+    $('#ruby').show();
+  };
 
-function emeation(prosciutto, ham, turkey) {
-  if (emeation === prosciutto) {
-    console.log('Very CSS');
-  } else if (emeation === ham) {
-    console.log('Very Ruby');
-  } else (emeation === turkey) 
-    console.log('Very C#');
-  }
-};
+function emeational(prosciutto, ham, turkey) {
+  if (emeational === prosciutto) {
+    $('#java').show();
+  } else if (emeational === ham) {
+    $('#ruby').show();
+  } else (emeational === turkey) 
+    $('#csharp').show();
+  };
 
 
 $(document).ready(function() {
   $("form#quiz").submit(function(event) {
     event.preventDefault();
-    var fear = $(input:radio[name=fear]:checked).val();
-    var standfor = $(input:radio[name=standfor]:checked).val();
-    var cry= $(input:radio[name=cry]:checked).val();
-    var outside= $(input:radio[name=outside]:checked).val();
-    var emeation= $(input:radio[name=emeation]:checked).val();
+    var fear = typeOfFear(fear);
+    var standfor = htmlStandFor(standfor);
+    var cry= cryTime(cry);
+    var outside= goOutside(outside);
+    var emeation= emeational(emeation);
+    var result= (emeational(prosciutto, ham, turkey) + goOutside(none, some, all)+cryTime(pizza, insect, sartre));
 
     $("#result").append(result);
 
   });
 });
+
+function newFunction(emeation) {
+  return $(input, radio[name = emeation], checked).val();
+}
+
+function newFunction(outside) {
+  return $(input, radio[name = outside], checked).val();
+}
+
+function newFunction(cry) {
+  return $(input, radio[name = cry], checked).val();
+}
+
+function newFunction_1(standfor) {
+  return $(input, radio[name = standfor], checked).val();
+}
+
+function newFunction(fear) {
+  return $(input, radio[name = fear], checked).val();
+}
