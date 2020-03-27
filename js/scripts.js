@@ -21,9 +21,7 @@ function htmlStandFor(laughs, lovers, meatloaf) {
 $(document).ready(function() {
   $("form#quiz").submit(function(event) {
     event.preventDefault();
-    var typeOfFear = document.getElementById("red", "yellow", "green");
-    var htmlStandFor= document.getElementbyId("laughs", "lovers", "meatloaf");
 });
 
-$("#result").append(result);
+$("id#result").append(result);
 });
