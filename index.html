@@ -13,73 +13,90 @@
 
   <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas lorem in hendrerit finibus. Nullam dolor ex, sollicitudin in pharetra et, laoreet a tellus. Etiam eget pretium lorem, nec sagittis erat. Phasellus posuere neque leo, vel hendrerit nisl porttitor et. Mauris blandit elit vitae turpis accumsan, pharetra vulputate arcu sollicitudin. Maecenas placerat sit amet nulla a malesuada. Vestibulum eget risus sed dolor bibendum dignissim. Morbi sit amet aliquam nunc. Aenean in tempus odio. Etiam efficitur vestibulum ante, nec euismod metus placerat aliquam. Maecenas nibh sapien, consectetur vel rhoncus non, vulputate consectetur ante. In mattis, diam vitae efficitur egestas, est ligula ullamcorper tortor, sed ultrices erat mauris sed dui. Aliquam egestas justo ut dapibus laoreet. Donec tristique lacus eget enim accumsan tincidunt. Nullam accumsan est molestie, egestas lacus et, lacinia neque. Curabitur laoreet aliquam urna, tincidunt porttitor ipsum luctus quis.</p>
   
-  <div class="container">
+<div class="container">
 <form id=quiz>
-  <p class="fear">What color is your fear?</p>
-  <input type="radio" id="red">
-  <label for="red">Red</label>
-  <br>
-  <input type="radio" id="yellow">
-  <label for="yellow">Yellow</label>
-  <br>
-  <input type="radio" id="green">
-  <label for="green">Green</label>
-  <br>
-  <br>
+  <p>What color is your fear?</p>
+  <div>
+    <input type="radio" id="red" name="fear" value="red">
+    <label for="red">Red</label>
+  </div>
+  <div>
+    <input type="radio" id="yellow" name="fear" value="yellow">
+    <label for="yellow">Yellow</label>
+  </div>
+  <div>
+    <input type="radio" id="green" name="fear" value="green">
+    <label for="green">Green</label>
+  </div>
+
   <p>What does HTML stand for?</p>
-  <input type="radio" id="meat">
-  <label for="meat">how the meat laughs</label>
-  <br>
-  <input type="radio" id="meatlove">
-  <label for="meatlove">help the meat lovers</label>
-  <br>
-  <input type="radio" id="meatloaf">
-  <label for="meatloaf">heaven? that's meat loaf</label>
-  <br>
-  <br>
+  <div>
+    <input type="radio" id="meat" name="standfor" value="laughs">
+    <label for="meat">how the meat laughs</label>
+  </div>
+  <div>
+    <input type="radio" id="meatlove" name="standfor" value="lovers">
+    <label for="meatlove">help the meat lovers</label>
+  </div>
+  <div>
+    <input type="radio" id="meatloaf" name="standfor" value="meatloaf">
+    <label for="meatloaf">heaven? that's meat loaf</label>
+  </div>
+
   <p>For what do you cry?</p>
-  <input type="radio" id="pizza">
-  <label for="pizza">Meatlovers pizza</label>
-  <br>
-  <input type="radio" id="veg">
-  <label for="veg">We are all insects. Groping towards something terrible or divine.</label>
-  <br>
-  <input type="radio" id="sartre">
-  <label for="sartre">A pale reflection of myself wavers in my consciousness...and suddenly the “I” pales, pales, and fades out.</label>
-  <br>
-  <br>
+  <div>
+    <input type="radio" id="pizza" name="cry" value="pizza">
+    <label for="pizza">Meatlovers pizza</label>
+  </div>
+  <div>
+    <input type="radio" id="insect" name="cry" value="insect">
+    <label for="veg">We are all insects. Groping towards something terrible or divine.</label>
+  </div>
+  <div>
+    <input type="radio" id="sartre" name="cry" value="sartre">
+    <label for="sartre">A pale reflection of myself wavers in my consciousness...and suddenly the “I” pales, pales, and fades out.</label>
+  </div>
+  
   <p>How many times a week do you go outside?</p>
-  <input type="radio" id="none">
-  <label for="none">My memories are like coins in the devil's purse: when you open it you find only dead leaves.</label>
-  <br>
-  <input type="radio" id="some">
+  <div>
+    <input type="radio" id="none" name="outside" value="none">
+    <label for="none">My memories are like coins in the devil's purse: when you open it you find only dead leaves.</label>
+  </div>
+  <div>
+    <input type="radio" id="some" name="outside" value="some">
   <label for="some">We are most artistically caged.</label>
-  <br>
-  <input type="radio" id="all">
-  <label for="all">My God died young. Theolatry i found
-    Degrading, and its premises, unsound.
-    No free man needs God; but was I free?</label>
-  <br>
-  <br>
+  </div>
+  <div>
+    <input type="radio" id="all" name="outside" value="all">
+    <label for="all">My God died young. Theolatry i found
+        Degrading, and its premises, unsound.
+        No free man needs God; but was I free?</label>
+  </div>
+  
   <p>Lunchmeat that elicits the most emotion?</p>
-  <input type="radio" id="prosciutto">
-  <label for="prosciutto">Prosciutto</label>
+  <div>
+    <input type="radio" id="prosciutto" name="emeation" value="prosciutto">
+    <label for="prosciutto">Prosciutto</label>
+  </div>
+  <div>
+    <input type="radio" id="ham" name="emeation" value="ham">
+    <label for="ham">Ham</label>
+  </div>
+  <div>
+    <input type="radio" id="turkey" name="emeation" value="turkey">
+    <label for="turkey">Turkey</label>
+  </div>
   <br>
-  <input type="radio" id="ham">
-  <label for="ham">Ham</label>
-  <br>
-  <input type="radio" id="turkey">
-  <label for="turkey">Turkey</label>
-  <br>
-  <br>
+
   <button id="submit">Get Results</button>
 
 </form>
 
-<div id="results">
-<p 
-</div>
+  <div id="results"></div>
 
+    <span></span>
+  
   </div>
+
 </body>
 </html>
