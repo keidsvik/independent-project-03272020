@@ -8,6 +8,7 @@ function typeOfFear(red, green, yellow) {
     $('#java').show();
   };
 
+
 function htmlStandFor(laughs, lovers, meatloaf) {
   if (htmlStandFor === laughs) {
     $('#ruby').show();
@@ -25,6 +26,7 @@ function cryTime(pizza, insect, sartre) {
   } else (cryTime === sartre) 
     $('#java').show();
   };
+
 
 function goOutside(none, some, all) {
   if (goOutside === none) {
@@ -45,6 +47,7 @@ function emeational(prosciutto, ham, turkey) {
   };
 
 
+
 $(document).ready(function() {
   $("form#quiz").submit(function(event) {
     event.preventDefault();
@@ -53,29 +56,8 @@ $(document).ready(function() {
     var cry= cryTime(cry);
     var outside= goOutside(outside);
     var emeation= emeational(emeation);
-    var result= (emeational(prosciutto, ham, turkey) + goOutside(none, some, all)+cryTime(pizza, insect, sartre));
-
-    $("#result").append(result);
-
-  });
+    });
 });
 
-function newFunction(emeation) {
-  return $(input, radio[name = emeation], checked).val();
-}
+$("#result").append(results);
 
-function newFunction(outside) {
-  return $(input, radio[name = outside], checked).val();
-}
-
-function newFunction(cry) {
-  return $(input, radio[name = cry], checked).val();
-}
-
-function newFunction_1(standfor) {
-  return $(input, radio[name = standfor], checked).val();
-}
-
-function newFunction(fear) {
-  return $(input, radio[name = fear], checked).val();
-}
