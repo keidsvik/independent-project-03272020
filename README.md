@@ -25,7 +25,7 @@ _Questions and concerns can be sent to kelly.eidsvik@gmail.com_
 
 ## Technologies Used
 
-_HTML, CSS, Bootstrap._
+_HTML, CSS, Bootstrap, Javascript._
 
 ## License
 
