@@ -6,14 +6,14 @@ body {
 
 h1 {
   font-family: 'Rubik Mono One';
-  font-size: large;
-  margin: 70px;
+  font-size: 30px;
+  margin: 100px;
 }
 
 .intro {
   margin: 100px;
 }
 
-#results {
+#result {
   display: none;
 } 

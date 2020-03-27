@@ -1,11 +1,11 @@
 
 function typeOfFear(red, green, yellow) {
   if (typeOfFear === red) {
-    $('#ruby').show();
+    return 'ruby';
   } else if (typeOfFear === green) {
-    $('#csharp').show();
+    return 'csharp';
   } else (typeOfFear === yellow) 
-    $('#java').show();
+    return 'java';
   };
 
 
