@@ -11,53 +11,19 @@ function typeOfFear(red, green, yellow) {
 
 function htmlStandFor(laughs, lovers, meatloaf) {
   if (htmlStandFor === laughs) {
-    $('#ruby').show();
+    return 'ruby';
   } else if (htmlStandFor === lovers) {
-    $('#csharp').show();
+    return 'csharp';
   } else (htmlStandFor === meatloaf) 
-    $('#java').show();
+    return 'java';
   };
-
-function cryTime(pizza, insect, sartre) {
-  if (cryTime === pizza) {
-    $('#csharp').show();
-  } else if (cryTime === insect) {
-    $('#ruby').show();
-  } else (cryTime === sartre) 
-    $('#java').show();
-  };
-
-
-function goOutside(none, some, all) {
-  if (goOutside === none) {
-    $('#java').show();
-  } else if (goOutside === some) {
-    $('#ruby').show();
-  } else (goOutside === all) 
-    $('#ruby').show();
-  };
-
-function emeational(prosciutto, ham, turkey) {
-  if (emeational === prosciutto) {
-    $('#java').show();
-  } else if (emeational === ham) {
-    $('#ruby').show();
-  } else (emeational === turkey) 
-    $('#csharp').show();
-  };
-
-
 
 $(document).ready(function() {
   $("form#quiz").submit(function(event) {
     event.preventDefault();
-    var fear = typeOfFear(fear);
-    var standfor = htmlStandFor(standfor);
-    var cry= cryTime(cry);
-    var outside= goOutside(outside);
-    var emeation= emeational(emeation);
-    });
+    var typeOfFear = document.getElementById("red", "yellow", "green");
+    var htmlStandFor= document.getElementbyId("laughs", "lovers", "meatloaf");
 });
 
-$("#result").append(results);
-
+$("#result").append(result);
+});
