@@ -13,6 +13,9 @@ h1 {
 .intro {
   margin: 100px;
 }
+.resultsDiv {
+  margin-bottom: 200px;
+}
 
 #result {
   display: none;
