@@ -1,60 +1,72 @@
 
-function fearColorToLanguage(typeOfFear) {
-  if (typeOfFear === red) {
-    return 'ruby';
-  } else if (typeOfFear === green) {
-    return 'csharp';
-  } else (typeOfFear === yellow) 
-    return 'java';
+function fearColorToLanguage(fearColor) {
+  if (fearColor === 'red') {
+    ruby ++; 
+  } else if (fearColor === 'green') {
+    csharp ++; 
+  } else (fearColor === 'yellow') 
+    java ++; 
   };
 
-
-function whatHtml(htmlStandFor) {
-  if (htmlStandFor === laughs) {
-    return 'ruby';
-  } else if (htmlStandFor === lovers) {
-    return 'csharp';
-  } else (htmlStandFor === meatloaf) 
-    return 'java';
+function htmlToLanguage(standFor) {
+  if (standFor === 'laughs') {
+     ruby ++; 
+  } else if (standFor === 'lovers') {
+     csharp ++; 
+  } else (standFor === 'meatloaf') 
+    java ++; 
   };
 
-  function timeCry(cryTime) {
-    if (cryTime === pizza) {
-      return 'ruby';
-    } else if (cryTime === insect) {
-      return 'csharp';
-    } else (cryTime === sartre) 
-      return 'java';
+  function cryToLanguage(cryTime) {
+    if (cryTime === 'pizza') {
+      ruby ++;
+    } else if (cryTime === 'insect') {
+      csharp ++; 
+    } else (cryTime === 'sartre') 
+      java ++; 
     };
   
   
-  function timeOutside(goOutside) {
-    if (goOutside === none) {
-      return 'java';
-    } else if (goOutside === some) {
-      return 'ruby';
-    } else (goOutside === all) 
-      return 'csharp';
+  function outsideToLanguage(outsideTime) {
+    if (outsideTime === 'none') {
+      java ++;
+    } else if (outsideTime === 'some') {
+      ruby ++;
+    } else (outsideTime === 'all') 
+      csharp ++;
     };
   
-  function meatType(emeational) {
-    if (emeational === prosciutto) {
-      return 'java';
-    } else if (emeational === ham) {
-      return 'ruby';
-    } else (emeational === turkey) 
-      return 'csharp';
+  function meatTypeToLanguage(meatType) {
+    if (meatType === 'prosciutto') {
+      java ++;
+    } else if (meatType === 'ham') {
+      ruby ++;
+    } else (meatType === 'turkey') 
+      csharp ++;
     };
 
 $(document).ready(function() {
   $("form#quiz").submit(function(event) {
     event.preventDefault();
-    var fearColor = document.getElementById(result);
-    var htmlStandFor = document.getElementById(result);
-    var meatType = document.getElementById(result);
-    var timeCry = document.getElementById(result);
-    var timeOutside = document.getElementById(result);
-});
+    var ruby = 0; 
+    console.log(ruby);
+    var java = 0; 
+    console.log(java);
+    var csharp = 0;
+    console.log(csharp)
+    var fearColor = $("input:radio[name=fear]:checked").val();
+    console.log(fearColor)
+    var stand = $("input:radio[name=standFor]:checked").val();
+    console.log(stand)
+    var meatType = $("input:radio[name=emeation]:checked").val();
+    console.log(meatType)
+    var cryTime = $("input:radio[name=cry]:checked").val();
+    console.log(cryTime)
+    var outsideTime = $("input:radio[name=outside]:checked").val();
+    console.log(outsideTime)
 
-$("#result").append(result);
+    console.log($("#result"));
+    $("#result").show(result);
+    
+  });
 });
