@@ -17,7 +17,7 @@ _This website has a quiz to determine what type of languages an aspiring develop
 
 ## Known Bugs
 
-_Cannot get individual results to show when button is clicked. Does not work._
+_Only one quiz result shows up, regardless of options chosen._
 
 ## Support and contact details
 
