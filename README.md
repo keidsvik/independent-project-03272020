@@ -1,6 +1,6 @@
 # Independent Project 3/27/2020
 
-#### _ A practice website using Javascript and JQuery Epicodus on 3/20/2020
+#### _ A practice website using Javascript and JQuery Epicodus on 3/27/2020
 
 #### By _**Kelly Eidsvik**_ 
 
